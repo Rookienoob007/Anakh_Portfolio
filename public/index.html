@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anakh's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #ff7a18, #af002d, #319197, #f2b7bb);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: transform 0.3s ease-in-out, background 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background: #4CAF50;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anakh's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Anakh, a skilled Quality Assurance Engineer and aspiring DevOps professional with a passion for continuous learning. This portfolio showcases my work and journey.</p>
+            <p>I've completed approximately <strong>40%</strong> of my DevOps studies, focusing on areas like Docker, Kubernetes, CI/CD pipelines, and cloud platforms. I am actively working on deepening my understanding of these technologies and applying them in real-world projects.</p>
+            <p>I've completed approximately <strong>50%</strong> of my Networking studies, with a focus on routing, switching, IP addressing, and network protocols. I am continuing to build my knowledge on advanced networking concepts such as OSPF, BGP, and IPv6.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Software Testing</div>
+                <div class="skill">DevOps</div>
+                <div class="skill">Regression Testing</div>
+                <div class="skill">API Testing</div>
+                <div class="skill">Manual Testing</div>
+                <div class="skill">Playwright</div>
+                <div class="skill">Scrum</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Kubernetes</div>
+                <div class="skill">CI/CD</div>
+                <div class="skill">Cloud Platforms</div>
+                <div class="skill">Networking</div>
+                <div class="skill">Routing</div>
+                <div class="skill">Switching</div>
+                <div class="skill">IP Addressing</div>
+                <div class="skill">OSPF</div>
+                <div class="skill">BGP</div>
+                <div class="skill">IPv6</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaboration or opportunities!</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Anakh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
